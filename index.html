@@ -11,80 +11,127 @@
 <body>
   <header>
     <nav>
-      <a class="brand" href="index.html"><img class="mark" src="logo.svg" alt="" width="26" height="26"/> Digital Guardian</a>
+      <a class="brand" href="index.html"><img class="mark" src="logo.svg" alt="" width="30" height="30"/> Digital Guardian</a>
       <div class="links">
         <a href="index.html#features">Features</a>
         <a href="pricing.html">Pricing</a>
-        <a href="download.html">Download</a>
         <a href="privacy.html">Privacy</a>
         <a href="terms.html">Terms</a>
         <a href="refunds.html">Refunds</a>
         <a href="contact.html">Contact</a>
+        <a class="cta" href="download.html">Download</a>
       </div>
     </nav>
   </header>
 
   <div class="hero">
     <div class="container">
-      <h1>Stop scams before they reach your family.</h1>
-      <p>Digital Guardian is an AI-first scam-protection app built for elderly Indians — it spots fraudulent calls, messages, UPI requests and fake apps in real time, and coaches the user in their own language at the exact moment a scammer strikes.</p>
-      <a class="btn" href="download.html">Download the app (beta)</a>
-      <a class="btn secondary" href="pricing.html">See plans</a>
+      <div>
+        <span class="eyebrow"><span class="pulse"></span> AI protection · Live in beta</span>
+        <h1>The scam stops <span class="accent">before</span> it reaches your parents.</h1>
+        <p>Digital Guardian is an AI-first shield for Indian families. It reads scam <em>intent</em> — not just numbers — across calls, SMS, WhatsApp, UPI and fake apps, and coaches your loved ones aloud, in their own language, at the exact moment a scammer strikes.</p>
+        <a class="btn" href="download.html">Get the app — free</a>
+        <a class="btn secondary" href="pricing.html">See Parivar Shield plans</a>
+      </div>
+      <div class="defence" aria-hidden="true">
+        <div class="halo"></div>
+        <div class="ring r1"></div>
+        <div class="ring r2"></div>
+        <img class="shield-img" src="logo.svg" alt="" />
+        <div class="alert-card blocked">
+          <div class="ico">⛔</div>
+          <div><p class="t">Digital-arrest call blocked</p><p class="s">"CBI officer" — voice scam detected</p></div>
+        </div>
+        <div class="alert-card family">
+          <div class="ico">👪</div>
+          <div><p class="t">Family alerted</p><p class="s">Rahul was notified instantly</p></div>
+        </div>
+        <div class="alert-card safe">
+          <div class="ico">✅</div>
+          <div><p class="t">Message safe</p><p class="s">Genuine bank alert — no action needed</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="stats">
+    <div class="container">
+      <div class="stat"><div class="n"><span class="hl">₹1,750 Cr+</span></div><div class="l">lost to cyber fraud in India — every month</div></div>
+      <div class="stat"><div class="n">Real-time</div><div class="l">AI verdicts during the call or message</div></div>
+      <div class="stat"><div class="n">6 languages</div><div class="l">English, हिन्दी, বাংলা, தமிழ், తెలుగు, मराठी</div></div>
+      <div class="stat"><div class="n"><span class="hl">On-device</span></div><div class="l">your messages never leave the phone</div></div>
     </div>
   </div>
 
   <section id="features" class="container">
-    <h2>What Digital Guardian does</h2>
+    <p class="kicker">The Guardian layer</p>
+    <h2>Built for the scams of the AI era</h2>
+    <p class="lede">Caller-ID apps tell you who is calling. Digital Guardian understands what the caller is <em>doing</em> — and steps in when it's a scam.</p>
     <div class="grid">
-      <div class="card">
+      <div class="card" data-reveal>
+        <div class="icon">🧠</div>
         <h3>AI message &amp; link shield</h3>
-        <p class="muted">Checks SMS, WhatsApp and links for scam <em>intent</em>, not just keywords — flagging KYC fraud, OTP theft, lottery and digital-arrest scams instantly.</p>
+        <p class="muted">Reads SMS, WhatsApp and links for scam <em>intent</em>, not just keywords — KYC fraud, OTP theft, fake e-challans and digital-arrest threats flagged instantly, even when reworded.</p>
       </div>
-      <div class="card">
-        <h3>Live scam call coach</h3>
-        <p class="muted">Listens (on the device) during a suspicious call and warns the user aloud in their language if a scammer is at work.</p>
+      <div class="card" data-reveal>
+        <div class="icon">🎙️</div>
+        <h3>Live scam-call copilot</h3>
+        <p class="muted">During a suspicious call, the on-device copilot listens and speaks up — "Yeh police nahi hai. Phone kaat dijiye." — before the money moves.</p>
       </div>
-      <div class="card">
+      <div class="card" data-reveal>
+        <div class="icon">🛑</div>
         <h3>UPI &amp; payment firewall</h3>
-        <p class="muted">Adds a "stop and think" moment before a payment during an active scam window, and explains the risk.</p>
+        <p class="muted">Opens GPay during an active scam window? A full-screen "Ruko. Socho." takeover breaks the scammer's spell before the transfer.</p>
       </div>
-      <div class="card">
-        <h3>Parivar Shield — family circle</h3>
-        <p class="muted">The earning adult can watch over their parents: real-time alerts when a loved one faces a serious scam, and recovery help.</p>
+      <div class="card" data-reveal>
+        <div class="icon">🫂</div>
+        <h3>Parivar Shield family circle</h3>
+        <p class="muted">The earning adult watches over their parents: instant alerts on serious threats, a trusted-circle dashboard, and golden-hour recovery help if money moved.</p>
       </div>
-      <div class="card">
-        <h3>Vernacular by design</h3>
-        <p class="muted">Works in English, Hindi, Bengali, Tamil, Telugu and Marathi — every alert in the user's own language.</p>
+      <div class="card" data-reveal>
+        <div class="icon">🗣️</div>
+        <h3>Voice-clone defence</h3>
+        <p class="muted">AI voices can fake a grandson's cry for help. The family safe-word challenge and call-back drill unmask them in seconds.</p>
       </div>
-      <div class="card">
-        <h3>Privacy-first</h3>
-        <p class="muted">Message scanning happens on the device; we never store your message text or your full Aadhaar number. See our <a href="privacy.html">Privacy Policy</a>.</p>
+      <div class="card" data-reveal>
+        <div class="icon">🔒</div>
+        <h3>Privacy by architecture</h3>
+        <p class="muted">Scanning happens on the device. We never store your message text or full Aadhaar number — protection without surveillance. <a href="privacy.html">Privacy Policy</a>.</p>
       </div>
     </div>
   </section>
 
   <section class="container">
-    <h2>Plans &amp; pricing</h2>
-    <p class="muted">Personal scam protection is <strong>free forever</strong>. The <strong>Parivar Shield</strong> family plan unlocks the family-coordination layer (guardian alerts, trusted circle, recovery assist).</p>
+    <p class="kicker">Plans</p>
+    <h2>Free for you. Parivar Shield for the whole family.</h2>
+    <p class="lede">Personal scam protection is <strong>free forever</strong>. Parivar Shield adds the family-coordination layer — guardian alerts, trusted circle, kids mode and recovery assist.</p>
     <div class="plans">
-      <div class="plan">
+      <div class="plan" data-reveal>
         <h3>Free</h3>
         <div class="price">₹0</div>
         <div class="per">Personal protection, forever</div>
       </div>
-      <div class="plan">
+      <div class="plan" data-reveal>
         <h3>Parivar Shield — Monthly</h3>
         <div class="price">₹149</div>
         <div class="per">per month</div>
       </div>
-      <div class="plan best">
+      <div class="plan best" data-reveal>
         <span class="tag">Best value</span>
         <h3>Parivar Shield — Yearly</h3>
         <div class="price">₹999</div>
         <div class="per">per year (≈ ₹83/month)</div>
       </div>
     </div>
-    <p class="muted" style="margin-top:16px">Paid plans are billed via UPI Autopay through our payment partner. Prices are inclusive of applicable taxes. See <a href="pricing.html">Pricing</a> and <a href="refunds.html">Refund &amp; Cancellation Policy</a>.</p>
+    <p class="muted" style="margin-top:18px">Paid plans are billed via UPI Autopay through our payment partner. Prices are inclusive of applicable taxes. See <a href="pricing.html">Pricing</a> and <a href="refunds.html">Refund &amp; Cancellation Policy</a>.</p>
+  </section>
+
+  <section class="container">
+    <div class="cta-band" data-reveal>
+      <h2>Give your family an AI guardian today.</h2>
+      <p>Two minutes to install. Free personal protection from the first second.</p>
+      <a class="btn" href="download.html">Download the Android beta</a>
+    </div>
   </section>
 
   <footer>
@@ -100,5 +147,7 @@
       <div class="copy">© 2026 Digital Guardian. All rights reserved.</div>
     </div>
   </footer>
+
+  <script src="site.js" defer></script>
 </body>
 </html>
