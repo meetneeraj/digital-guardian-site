@@ -243,6 +243,39 @@ table.facts { width: 100%; border-collapse: collapse; }
 table.facts td { padding: 9px 10px; border-bottom: 1px solid var(--border); vertical-align: top; }
 table.facts td:first-child { font-weight: 700; width: 190px; }
 
+/* Centered section headers */
+.sec-head { text-align: center; }
+.sec-head .lede { margin-left: auto; margin-right: auto; }
+
+/* Sub-page hero */
+.page-hero { position: relative; padding: 72px 0 8px; text-align: center; }
+.page-hero h1 {
+  font-size: clamp(34px, 4.6vw, 52px); margin: 0 0 14px; letter-spacing: -0.035em;
+  line-height: 1.08; font-weight: 800;
+  background: linear-gradient(135deg, #FFFFFF 30%, #A9B8FF 75%, #6E8BFF);
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+.page-hero h1 .accent { background: linear-gradient(135deg, var(--teal), #7CFFDE); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.page-hero .lede { margin: 0 auto 10px; }
+.page-hero .kicker { margin-bottom: 12px; }
+.dl-meta { color: var(--muted); font-size: 13px; margin-top: 14px; }
+.dl-meta .sep { margin: 0 8px; opacity: .5; }
+
+/* Contact cards */
+.contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 18px; }
+.contact-grid .card { text-align: left; }
+.contact-grid .card a { text-decoration: none; }
+.contact-grid .card .big { font-size: 17px; font-weight: 700; color: var(--ink); word-break: break-all; }
+
+/* Emergency band */
+.sos-band {
+  display: flex; gap: 14px; align-items: center; margin-top: 26px;
+  background: rgba(255, 84, 112, 0.07); border: 1px solid rgba(255, 84, 112, 0.3);
+  border-radius: var(--radius); padding: 18px 22px;
+}
+.sos-band .ico { font-size: 22px; }
+.sos-band strong { color: #FF7A93; }
+
 /* Reveal on scroll */
 [data-reveal] { opacity: 0; transform: translateY(22px); transition: opacity .6s ease, transform .6s ease; }
 [data-reveal].in { opacity: 1; transform: none; }

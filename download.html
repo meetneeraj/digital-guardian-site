@@ -11,44 +11,54 @@
 <body>
   <header>
     <nav>
-      <a class="brand" href="index.html"><img class="mark" src="logo.svg" alt="" width="26" height="26"/> Digital Guardian</a>
+      <a class="brand" href="index.html"><img class="mark" src="logo.svg" alt="" width="30" height="30"/> Digital Guardian</a>
       <div class="links">
         <a href="index.html#features">Features</a>
         <a href="pricing.html">Pricing</a>
-        <a href="download.html">Download</a>
         <a href="privacy.html">Privacy</a>
         <a href="terms.html">Terms</a>
         <a href="refunds.html">Refunds</a>
         <a href="contact.html">Contact</a>
+        <a class="cta" href="download.html">Download</a>
       </div>
     </nav>
   </header>
 
-  <div class="hero">
+  <div class="page-hero">
     <div class="container">
-      <h1>Get the Android beta</h1>
-      <p>Digital Guardian is currently in beta for Android. Personal scam protection is free forever — install it, sign in with your phone number, and you're protected in under two minutes.</p>
-      <a class="btn" href="https://digital-guardian-api.digitalgaurd.workers.dev/app.html">Download the beta APK</a>
+      <p class="kicker">Android beta</p>
+      <h1>Your AI guardian, <span class="accent">installed in 2 minutes</span>.</h1>
+      <p class="lede">Personal scam protection is free forever. Tap the button on your Android phone — the APK downloads right here, no extra pages.</p>
+      <p style="margin: 26px 0 0;">
+        <a class="btn" href="https://digital-guardian-api.digitalgaurd.workers.dev/apk">⬇ Download the beta APK</a>
+      </p>
+      <p class="dl-meta">Direct APK download <span class="sep">·</span> Android 8.0+ <span class="sep">·</span> Free <span class="sep">·</span> iOS coming soon</p>
     </div>
   </div>
 
   <section class="container">
-    <h2>How to install</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>1. Download</h3>
-        <p class="muted">Tap the download button above on your Android phone. It takes you to our beta page with the latest APK.</p>
+    <div class="sec-head">
+      <p class="kicker">Setup</p>
+      <h2>Three steps to protection</h2>
+    </div>
+    <div class="grid" style="margin-top: 28px;">
+      <div class="card" data-reveal>
+        <div class="icon">⬇️</div>
+        <h3>1 · Download</h3>
+        <p class="muted">Tap the download button above on your Android phone — the beta APK starts downloading immediately.</p>
       </div>
-      <div class="card">
-        <h3>2. Allow the install</h3>
-        <p class="muted">Open the downloaded file. If asked, allow your browser to "install unknown apps" — this is normal for beta apps that are not yet on the Play Store.</p>
+      <div class="card" data-reveal>
+        <div class="icon">🛡️</div>
+        <h3>2 · Allow the install</h3>
+        <p class="muted">Open the downloaded file. If asked, allow your browser to "install unknown apps" — normal for beta apps not yet on the Play Store.</p>
       </div>
-      <div class="card">
-        <h3>3. Sign in</h3>
-        <p class="muted">Open Digital Guardian and sign in with your phone number. Protection starts immediately; family features are in the Parivar Shield plan.</p>
+      <div class="card" data-reveal>
+        <div class="icon">📱</div>
+        <h3>3 · Sign in</h3>
+        <p class="muted">Open Digital Guardian and sign in with your phone number. Protection starts immediately; family features live in the Parivar Shield plan.</p>
       </div>
     </div>
-    <p class="muted" style="margin-top:16px">Android only for now — the iOS app is planned. Problems or feedback? <a href="contact.html">Contact us</a> — every report makes the app safer.</p>
+    <p class="muted" style="margin-top:22px; text-align:center;">Problems or feedback? <a href="contact.html">Contact us</a> — every report makes the app safer.</p>
   </section>
 
   <footer>
@@ -64,5 +74,7 @@
       <div class="copy">© 2026 Digital Guardian. All rights reserved.</div>
     </div>
   </footer>
+
+  <script src="site.js" defer></script>
 </body>
 </html>
