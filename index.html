@@ -44,32 +44,30 @@
         <a class="btn secondary" href="pricing.html">See Parivar Shield plans</a>
       </div>
 
-      <!-- The intercept theater: a scam call being caught in real time -->
-      <div class="intercept" aria-hidden="true">
-        <div class="bar">
-          <span>Incoming call · on-device</span>
-          <span class="rec">REC</span>
+      <!-- The interceptor: a scam call caught by the shield -->
+      <div class="interceptor" aria-hidden="true">
+        <span class="ring r1"></span>
+        <span class="ring r2"></span>
+        <span class="ring r3"></span>
+        <div class="core">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
         </div>
-        <div class="caller">
-          <span class="avatar">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-          </span>
-          <div>
-            <div class="who">Unknown caller</div>
-            <div class="num">+91 98XX XXX 210 · claims "CBI"</div>
-          </div>
-        </div>
-        <div class="bubble seq s1 hindi">"आपके नाम से एक पार्सल पकड़ा गया है। यह डिजिटल अरेस्ट है।"</div>
-        <div class="bubble seq s2 hindi">"किसी को मत बताइए। अभी ₹40,000 भेजिए वरना गिरफ़्तारी होगी।"</div>
-        <div class="verdict seq s3">
-          <span class="stamp">Scam · digital arrest</span>
-          <div class="speak">
-            <span class="wave"><i></i><i></i><i></i><i></i><i></i></span>
-            <span class="line hindi">"फ़ोन काट दीजिए। यह पुलिस नहीं है।"</span>
-          </div>
-          <div class="sub">Guardian spoke this aloud, in Hindi — no audio ever left the phone.</div>
-        </div>
-        <div class="pinged seq s4"><span class="ok">✓</span> Rahul (son) alerted · payment firewall armed · 0:03</div>
+        <span class="chip3 incoming">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+          Scam call
+        </span>
+        <span class="chip3 blocked">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M5.6 5.6l12.8 12.8"/></svg></span>
+          Blocked
+        </span>
+        <span class="chip3 family">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+          Family alerted
+        </span>
+        <span class="chip3 firewall">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span>
+          Firewall armed
+        </span>
       </div>
     </div>
   </div>
@@ -87,29 +85,56 @@
     <div class="sec-head">
       <p class="kicker">Why it's different</p>
       <h2>Caller-ID apps check the number. We read the intent.</h2>
-      <p class="lede">A scammer can call from a fresh SIM or a hijacked personal number no database has flagged. Blocking bad numbers can't stop a bad conversation — so Digital Guardian listens to what's actually being said.</p>
+      <p class="lede">A scammer can call from a fresh SIM or a hijacked personal number no database has flagged. Blocking bad numbers can't stop a bad conversation.</p>
     </div>
-    <div class="compare">
-      <div class="lane" data-reveal>
-        <div class="layer">Caller-ID apps · identity layer</div>
-        <h3>Knows who is calling</h3>
-        <div class="dev">
-          <div class="row"><span class="k">Incoming</span><span class="num2">+91 98XX XXX 210</span></div>
-          <div class="row"><span class="k">Spam database</span><span class="chip2">Not listed</span></div>
-          <div class="row"><span class="k">Result</span><span class="chip2 amber">Call allowed</span></div>
+    <div class="flow">
+      <div class="track" data-reveal>
+        <div class="thead"><span class="layer">Caller-ID apps · identity layer</span><h3>Knows who is calling</h3></div>
+        <div class="steps">
+          <div class="step">
+            <span class="tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+            <span class="cap">Unknown call</span>
+          </div>
+          <span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg></span>
+          <div class="step">
+            <span class="tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9h16M4 15h16M10 3 8 21M16 3l-2 18"/></svg></span>
+            <span class="cap">Check the number</span>
+          </div>
+          <span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg></span>
+          <div class="step">
+            <span class="tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8.5 12.5l2.5 2.5 4.5-5"/></svg></span>
+            <span class="cap">Not in spam list</span>
+          </div>
+          <span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg></span>
+          <div class="step">
+            <span class="tile amber"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg></span>
+            <span class="cap on">Call rings through</span>
+          </div>
         </div>
-        <p class="note">The number looks clean, so the call rings through — and the scammer starts talking.</p>
       </div>
-      <div class="vs">vs</div>
-      <div class="lane win" data-reveal>
-        <div class="layer">Digital Guardian · intent layer</div>
-        <h3>Understands what they're doing</h3>
-        <div class="dev">
-          <div class="say hindi">"...यह डिजिटल अरेस्ट है, अभी ₹40,000 भेजिए..."</div>
-          <div class="row"><span class="k">On-device AI</span><span class="chip2 alert">Scam intent</span></div>
-          <div class="row"><span class="k">Guardian</span><span class="chip2 guard">Warned + family alerted</span></div>
+      <div class="track win" data-reveal>
+        <div class="thead"><span class="layer">Digital Guardian · intent layer</span><h3>Understands what they're doing</h3></div>
+        <div class="steps">
+          <div class="step">
+            <span class="tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+            <span class="cap">Same call</span>
+          </div>
+          <span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg></span>
+          <div class="step">
+            <span class="tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10v4M8 6v12M12 8v8M16 4v16M20 10v4"/></svg></span>
+            <span class="cap">Reads the words</span>
+          </div>
+          <span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg></span>
+          <div class="step">
+            <span class="tile alert"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M5.6 5.6l12.8 12.8"/></svg></span>
+            <span class="cap on">Scam intent</span>
+          </div>
+          <span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg></span>
+          <div class="step">
+            <span class="tile guard"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg></span>
+            <span class="cap on">Blocked + family alerted</span>
+          </div>
         </div>
-        <p class="note">Same call, any number, any language — the words give the scam away.</p>
       </div>
     </div>
   </section>
@@ -120,26 +145,38 @@
       <h2>A scam is won or lost in the opening moment.</h2>
       <p class="lede">A caller-ID app can only tell you a number looks suspicious. By then the scammer is already talking. Digital Guardian works inside the call itself — listening, judging intent, and speaking up before the fear takes hold.</p>
     </div>
-    <div class="beats">
-      <div class="beat attack" data-reveal>
-        <div class="t">0:00 · attack</div>
-        <h3>The call connects</h3>
-        <p>A "CBI officer" says a parcel in your parent's name holds drugs, and threatens instant arrest.</p>
+    <div class="timeline">
+      <div class="tnode attack" data-reveal>
+        <span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+        <div class="tbody">
+          <span class="time">0:00 · attack</span>
+          <h3>The call connects</h3>
+          <p>A "CBI officer" claims a parcel in your parent's name holds drugs.</p>
+        </div>
       </div>
-      <div class="beat guard" data-reveal>
-        <div class="t">0:01 · guardian</div>
-        <h3>It reads the intent</h3>
-        <p>On-device AI transcribes the call and recognises the digital-arrest script — no keyword list, no cloud.</p>
+      <div class="tnode guard" data-reveal>
+        <span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10v4M8 6v12M12 8v8M16 4v16M20 10v4"/></svg></span>
+        <div class="tbody">
+          <span class="time">0:01 · guardian</span>
+          <h3>It reads the intent</h3>
+          <p>On-device AI recognises the digital-arrest script — no cloud.</p>
+        </div>
       </div>
-      <div class="beat guard" data-reveal>
-        <div class="t">0:02 · guardian</div>
-        <h3>It speaks up</h3>
-        <p>A calm voice cuts in — "Yeh police nahi hai. Phone kaat dijiye." — and the payment firewall arms.</p>
+      <div class="tnode guard" data-reveal>
+        <span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10v4a1 1 0 0 0 1 1h3l4 4V5L7 9H4a1 1 0 0 0-1 1z"/><path d="M16 9a3 3 0 0 1 0 6"/><path d="M19 7a6 6 0 0 1 0 10"/></svg></span>
+        <div class="tbody">
+          <span class="time">0:02 · guardian</span>
+          <h3>It speaks up</h3>
+          <p>"Yeh police nahi hai. Phone kaat dijiye." — and the firewall arms.</p>
+        </div>
       </div>
-      <div class="beat guard" data-reveal>
-        <div class="t">0:03 · guardian</div>
-        <h3>The family is looped in</h3>
-        <p>Their son gets an instant alert, so the person under pressure is never facing the scammer alone.</p>
+      <div class="tnode guard" data-reveal>
+        <span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+        <div class="tbody">
+          <span class="time">0:03 · guardian</span>
+          <h3>Family looped in</h3>
+          <p>Their son gets an instant alert — they're never facing it alone.</p>
+        </div>
       </div>
     </div>
   </section>
