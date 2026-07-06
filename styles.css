@@ -32,6 +32,7 @@ nav {
 }
 .brand { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 18px; color: var(--ink); text-decoration: none; }
 .brand .dot { width: 26px; height: 26px; border-radius: 8px; background: linear-gradient(135deg, var(--indigo), var(--teal)); display: inline-block; }
+.brand .mark { width: 26px; height: 26px; display: inline-block; }
 nav .links a { color: var(--muted); text-decoration: none; margin-left: 16px; font-size: 14px; font-weight: 500; }
 nav .links a:hover { color: var(--indigo); }
 

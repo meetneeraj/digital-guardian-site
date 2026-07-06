@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="150 160 724 754">
+  <!-- Digital Guardian — "Guardian Embrace": a shield holding a guardian and
+       the elder they protect. Indigo #2540D9 / teal #00C9A7. -->
+  <defs>
+    <linearGradient id="dgShield" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2F52FF"/>
+      <stop offset="1" stop-color="#1B2BB0"/>
+    </linearGradient>
+    <clipPath id="dgClip">
+      <path transform="translate(512 537) scale(0.94) translate(-512 -537)"
+            d="M512 178 Q680 180 820 214 Q856 222 856 272 C860 560 760 780 512 896 C264 780 168 560 172 272 Q172 222 208 214 Q344 180 512 178 Z"/>
+    </clipPath>
+  </defs>
+  <path fill="url(#dgShield)"
+        d="M512 178 Q680 180 820 214 Q856 222 856 272 C860 560 760 780 512 896 C264 780 168 560 172 272 Q172 222 208 214 Q344 180 512 178 Z"/>
+  <g clip-path="url(#dgClip)">
+    <circle cx="408" cy="386" r="92" fill="#FFFFFF"/>
+    <path fill="#FFFFFF" d="M282 896 L282 642 Q282 516 408 516 Q534 516 534 642 L534 896 Z"/>
+    <circle cx="628" cy="470" r="64" fill="#00C9A7"/>
+    <path fill="#00C9A7" d="M536 896 L536 658 Q536 566 628 566 Q720 566 720 658 L720 896 Z"/>
+  </g>
+</svg>
