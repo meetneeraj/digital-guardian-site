@@ -5,6 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Digital Guardian — AI scam protection for Indian families</title>
   <meta name="description" content="Digital Guardian protects elderly Indians from scams with on-device AI, real-time call & message coaching, and a family safety circle. Free personal protection; Parivar Shield family plan ₹149/month or ₹999/year." />
+  <meta name="theme-color" content="#05070F" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Digital Guardian — the scam stops before it reaches your parents" />
+  <meta property="og:description" content="AI-first scam protection for Indian families. Reads scam intent across calls, SMS, WhatsApp and UPI, and coaches your loved ones aloud, in their own language, at the moment a scammer strikes." />
+  <meta property="og:image" content="og.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Digital Guardian — AI scam protection for Indian families" />
+  <meta name="twitter:description" content="The scam stops before it reaches your parents. Free personal protection; Parivar Shield family plan from ₹149/month." />
+  <meta name="twitter:image" content="og.png" />
   <link rel="icon" type="image/png" href="favicon.png" />
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -24,6 +33,7 @@
     </nav>
   </header>
 
+  <main>
   <div class="hero">
     <div class="container">
       <div>
@@ -33,23 +43,33 @@
         <a class="btn" href="download.html">Get the app — free</a>
         <a class="btn secondary" href="pricing.html">See Parivar Shield plans</a>
       </div>
-      <div class="defence" aria-hidden="true">
-        <div class="halo"></div>
-        <div class="ring r1"></div>
-        <div class="ring r2"></div>
-        <img class="shield-img" src="logo.svg" alt="" />
-        <div class="alert-card blocked">
-          <div class="ico">⛔</div>
-          <div><p class="t">Digital-arrest call blocked</p><p class="s">"CBI officer" — voice scam detected</p></div>
+
+      <!-- The intercept theater: a scam call being caught in real time -->
+      <div class="intercept" aria-hidden="true">
+        <div class="bar">
+          <span>Incoming call · on-device</span>
+          <span class="rec">REC</span>
         </div>
-        <div class="alert-card family">
-          <div class="ico">👪</div>
-          <div><p class="t">Family alerted</p><p class="s">Rahul was notified instantly</p></div>
+        <div class="caller">
+          <span class="avatar">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </span>
+          <div>
+            <div class="who">Unknown caller</div>
+            <div class="num">+91 98XX XXX 210 · claims "CBI"</div>
+          </div>
         </div>
-        <div class="alert-card safe">
-          <div class="ico">✅</div>
-          <div><p class="t">Message safe</p><p class="s">Genuine bank alert — no action needed</p></div>
+        <div class="bubble seq s1 hindi">"आपके नाम से एक पार्सल पकड़ा गया है। यह डिजिटल अरेस्ट है।"</div>
+        <div class="bubble seq s2 hindi">"किसी को मत बताइए। अभी ₹40,000 भेजिए वरना गिरफ़्तारी होगी।"</div>
+        <div class="verdict seq s3">
+          <span class="stamp">Scam · digital arrest</span>
+          <div class="speak">
+            <span class="wave"><i></i><i></i><i></i><i></i><i></i></span>
+            <span class="line hindi">"फ़ोन काट दीजिए। यह पुलिस नहीं है।"</span>
+          </div>
+          <div class="sub">Guardian spoke this aloud, in Hindi — no audio ever left the phone.</div>
         </div>
+        <div class="pinged seq s4"><span class="ok">✓</span> Rahul (son) alerted · payment firewall armed · 0:03</div>
       </div>
     </div>
   </div>
@@ -63,6 +83,36 @@
     </div>
   </div>
 
+  <section class="container">
+    <div class="sec-head">
+      <p class="kicker">The first three seconds</p>
+      <h2>A scam is won or lost in the opening moment.</h2>
+      <p class="lede">Truecaller tells you a number looks suspicious. By then the scammer is already talking. Digital Guardian works inside the call itself — listening, judging intent, and speaking up before the fear takes hold.</p>
+    </div>
+    <div class="beats">
+      <div class="beat attack" data-reveal>
+        <div class="t">0:00 · attack</div>
+        <h3>The call connects</h3>
+        <p>A "CBI officer" says a parcel in your parent's name holds drugs, and threatens instant arrest.</p>
+      </div>
+      <div class="beat guard" data-reveal>
+        <div class="t">0:01 · guardian</div>
+        <h3>It reads the intent</h3>
+        <p>On-device AI transcribes the call and recognises the digital-arrest script — no keyword list, no cloud.</p>
+      </div>
+      <div class="beat guard" data-reveal>
+        <div class="t">0:02 · guardian</div>
+        <h3>It speaks up</h3>
+        <p>A calm voice cuts in — "Yeh police nahi hai. Phone kaat dijiye." — and the payment firewall arms.</p>
+      </div>
+      <div class="beat guard" data-reveal>
+        <div class="t">0:03 · guardian</div>
+        <h3>The family is looped in</h3>
+        <p>Their son gets an instant alert, so the person under pressure is never facing the scammer alone.</p>
+      </div>
+    </div>
+  </section>
+
   <section id="features" class="container">
     <div class="sec-head">
       <p class="kicker">The Guardian layer</p>
@@ -71,32 +121,44 @@
     </div>
     <div class="grid">
       <div class="card" data-reveal>
-        <div class="icon">🧠</div>
+        <div class="icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 0-3 3 3 3 0 0 0-2.6 4.5A3 3 0 0 0 6 15a3 3 0 0 0 3 3 3 3 0 0 0 3 1 3 3 0 0 0 3-1 3 3 0 0 0 3-3 3 3 0 0 0-.4-5.5A3 3 0 0 0 15 5a3 3 0 0 0-3-3z"/><path d="M12 6v13"/></svg>
+        </div>
         <h3>AI message &amp; link shield</h3>
         <p class="muted">Reads SMS, WhatsApp and links for scam <em>intent</em>, not just keywords — KYC fraud, OTP theft, fake e-challans and digital-arrest threats flagged instantly, even when reworded.</p>
       </div>
       <div class="card" data-reveal>
-        <div class="icon">🎙️</div>
+        <div class="icon g">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M5 10a7 7 0 0 0 14 0"/><path d="M12 17v4"/><path d="M8 21h8"/></svg>
+        </div>
         <h3>Live scam-call copilot</h3>
         <p class="muted">During a suspicious call, the on-device copilot listens and speaks up — "Yeh police nahi hai. Phone kaat dijiye." — before the money moves.</p>
       </div>
       <div class="card" data-reveal>
-        <div class="icon">🛑</div>
+        <div class="icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+        </div>
         <h3>UPI &amp; payment firewall</h3>
         <p class="muted">Opens GPay during an active scam window? A full-screen "Ruko. Socho." takeover breaks the scammer's spell before the transfer.</p>
       </div>
       <div class="card" data-reveal>
-        <div class="icon">🫂</div>
+        <div class="icon g">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
         <h3>Parivar Shield family circle</h3>
         <p class="muted">The earning adult watches over their parents: instant alerts on serious threats, a trusted-circle dashboard, and golden-hour recovery help if money moved.</p>
       </div>
       <div class="card" data-reveal>
-        <div class="icon">🗣️</div>
+        <div class="icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h3l2-5 3 10 3-8 2 3h5"/></svg>
+        </div>
         <h3>Voice-clone defence</h3>
         <p class="muted">AI voices can fake a grandson's cry for help. The family safe-word challenge and call-back drill unmask them in seconds.</p>
       </div>
       <div class="card" data-reveal>
-        <div class="icon">🔒</div>
+        <div class="icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        </div>
         <h3>Privacy by architecture</h3>
         <p class="muted">Scanning happens on the device. We never store your message text or full Aadhaar number — protection without surveillance. <a href="privacy.html">Privacy Policy</a>.</p>
       </div>
@@ -137,6 +199,7 @@
       <a class="btn" href="download.html">Download the Android beta</a>
     </div>
   </section>
+  </main>
 
   <footer>
     <div class="container">
