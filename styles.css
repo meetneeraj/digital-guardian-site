@@ -191,10 +191,10 @@ a:focus-visible, .btn:focus-visible { outline: 2px solid var(--guard); outline-o
   background: var(--panel); padding: 24px 26px;
 }
 .track.win { border-color: rgba(0,229,176,0.3); background: linear-gradient(180deg, rgba(0,229,176,0.045), var(--panel) 42%); }
-.track .thead { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; margin-bottom: 22px; }
+.track .thead { display: flex; flex-direction: column; gap: 5px; margin-bottom: 26px; }
 .track .thead .layer { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.13em; text-transform: uppercase; color: var(--dim); }
 .track.win .thead .layer { color: var(--guard); }
-.track .thead h3 { margin: 0; font-size: 18px; }
+.track .thead h3 { margin: 0; font-size: 19px; }
 .steps { display: flex; align-items: flex-start; }
 .step { flex: 1 1 0; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 11px; padding: 0 6px; }
 .step .tile {
@@ -208,7 +208,7 @@ a:focus-visible, .btn:focus-visible { outline: 2px solid var(--guard); outline-o
 .step .tile.guard { color: var(--guard); border-color: rgba(0,229,176,0.45); background: rgba(0,229,176,0.1); box-shadow: 0 0 22px rgba(0,229,176,0.14); }
 .step .cap { font-size: 12.5px; color: var(--dim); line-height: 1.4; max-width: 128px; }
 .step .cap.on { color: var(--ink); font-weight: 600; }
-.arrow { flex: none; margin-top: 16px; color: var(--line); display: flex; }
+.arrow { flex: none; margin-top: 17px; color: rgba(151, 161, 200, 0.55); display: flex; }
 .arrow svg { width: 22px; height: 22px; }
 
 /* ── First three seconds (visual timeline) ───────────── */
